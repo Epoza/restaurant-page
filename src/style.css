@@ -37,14 +37,36 @@ ul > li {
     text-align: center;
 }
 
+/* -------------------- Home --------------------  */
+
+.home-text {
+    width: 60vw;
+    margin: 5px auto;
+}
+
+.centered-image {
+    display: block;
+    margin: auto;
+}
+
 /* -------------------- Menu --------------------  */
 
 .meal {
     padding: 0px 10px;
-    margin: 20px 0px;
+    margin: 20px auto;
     background-color: #c3dfe7;
     border: 2px solid black;
     border-radius: 8px;
+    max-width: 40vw;
+    min-width: 250px;
+}
+
+.meal-image {
+    width: 20vw;
+    height: auto;
+    padding-bottom: 10px;
+    margin-left: 10vw;
+    min-width: 125px;
 }
 
 /* -------------------- Contact --------------------  */
@@ -58,3 +80,10 @@ ul > li {
     max-width: 550px;
     text-align: center; /* Center any inline or inline-block children horizontally */
 }
+
+/* -------------------- Images --------------------  */
+
+
+
+
+

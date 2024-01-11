@@ -12,7 +12,6 @@ function load(page) {
     navbarHome.addEventListener('click', (e) => {
         e.preventDefault();
         load(homePageLoad());
-        
     });
 
     const navbarMenu = document.getElementById("menu");
