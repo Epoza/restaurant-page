@@ -3,10 +3,10 @@ export default function contactPageLoad() {
     const navbar = document.createElement("ul");
     navbar.setAttribute("id", "navbar");
 
-    const navbarInfo = document.createElement("li");
-    navbarInfo.setAttribute("id", "home");
-    navbarInfo.style.cursor = "pointer";
-    navbarInfo.textContent = "Info";
+    const navbarHome = document.createElement("li");
+    navbarHome.setAttribute("id", "home");
+    navbarHome.style.cursor = "pointer";
+    navbarHome.textContent = "Home";
 
     const navbarMenu = document.createElement("li");
     navbarMenu.setAttribute("id", "menu");
@@ -17,8 +17,9 @@ export default function contactPageLoad() {
     navbarContact.setAttribute("id", "contact");
     navbarContact.classList.add("active");
     navbarContact.textContent = "Contact";
+    navbarContact.style.backgroundColor = '#22a0df'
 
-    navbar.appendChild(navbarInfo);
+    navbar.appendChild(navbarHome);
     navbar.appendChild(navbarMenu);
     navbar.appendChild(navbarContact);
 
@@ -30,6 +31,9 @@ export default function contactPageLoad() {
     const textEl = document.createElement("p");
     textEl.classList.add("subtitle");
     textEl.textContent = "Contact";
+
+    const contactContainerEl = document.createElement("div");
+    contactContainerEl.classList.add("contact-container")
 
     const contactLocationEl = document.createElement("p");
     contactLocationEl.classList.add("text");
@@ -45,12 +49,14 @@ export default function contactPageLoad() {
 
     const div = document.createElement("div");
 
+    contactContainerEl.appendChild(contactLocationEl);
+    contactContainerEl.appendChild(contactEmailEl);
+    contactContainerEl.appendChild(contactPhoneEl);
+    
     div.appendChild(navbar);
     div.appendChild(headerEl);
     div.appendChild(textEl);
-    div.appendChild(contactLocationEl);
-    div.appendChild(contactEmailEl);
-    div.appendChild(contactPhoneEl);
+    div.appendChild(contactContainerEl);
 
     return div;
 }
