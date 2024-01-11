@@ -1,0 +1,60 @@
+body {
+    margin: 30px 10vw 0px 10vw;
+    background-color: #e6f1f4;
+}
+
+/* -------------------- Navbar -------------------- */
+
+ul {
+    display: flex;
+    flex-direction: row;
+    background-color: #306e82;
+    border: 2px solid #004258;
+}
+
+#home {
+    margin-left: clamp(0px, 5vw, 30px);
+}
+
+#menu, #contact {
+    margin-left: clamp(10px, 5vw, 140px);
+}
+
+ul > li {
+    list-style: none;
+    padding: 7px;
+    font-weight: bold;
+}
+
+/* -------------------- Center Text --------------------   */
+.title, .text {
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* -------------------- Menu --------------------  */
+
+.meal {
+    padding: 0px 10px;
+    margin: 20px 0px;
+    background-color: #c3dfe7;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+/* -------------------- Contact --------------------  */
+
+.contact-container {
+    padding: 0px 10px;
+    margin: 20px auto; /* Center horizontally */
+    background-color: #c3dfe7;
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 550px;
+    text-align: center; /* Center any inline or inline-block children horizontally */
+}
